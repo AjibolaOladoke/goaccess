@@ -6,7 +6,7 @@ Every project needs a shelf of ready answers. product and engineering is one of 
 
 ## Images
 
-[![goaccess](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![goaccess](images/preview.png)](https://github.com/Swift-Tech-Co/goaccess)
 
 ## What is it? ##
 GoAccess is an open source, real-time web log analyzer and interactive viewer
@@ -17,10 +17,10 @@ the fly. GoAccess parses your web server logs in real time and presents the
 data directly in the terminal or via a live HTML dashboard, making it easy to
 monitor traffic, detect anomalies, and troubleshoot issues instantly.
 
-More info at: https://www.swifttechco.com.
+More info at: https://github.com/Swift-Tech-Co/goaccess.
 
-[![GoAccess Terminal Dashboard](https://goaccess.io/images/goaccess-real-time-term-gh-2026-1.png?2026021201)](https://www.swifttechco.com)
-[![GoAccess HTML Dashboard](https://goaccess.io/images/goaccess-real-time-html-gh-2026.png?2026021201)](https://www.swifttechco.com)
+[![GoAccess Terminal Dashboard](https://goaccess.io/images/goaccess-real-time-term-gh-2026-1.png?2026021201)](https://github.com/Swift-Tech-Co/goaccess)
+[![GoAccess HTML Dashboard](https://goaccess.io/images/goaccess-real-time-html-gh-2026.png?2026021201)](https://github.com/Swift-Tech-Co/goaccess)
 
 ## Features ##
 GoAccess parses the specified web log file and outputs the data to the X
@@ -54,7 +54,7 @@ terminal. Features include:
 
 * **Only one dependency**<br>
   GoAccess is written in C. To run it, you only need ncurses as a dependency.
-  That's it. It even features its own Web Socket server  https://www.swifttechco.com
+  That's it. It even features its own Web Socket server  https://github.com/Swift-Tech-Co/goaccess
 
 * **Visitors**<br>
   Determine the amount of hits, visitors, bandwidth, and metrics for slowest
@@ -130,7 +130,7 @@ report, as well as a **`JSON`**, and
 You can see it more of a monitor command tool than anything else.
 
 ## Installation ##
-<a href="https://www.swifttechco.com">
+<a href="https://github.com/Swift-Tech-Co/goaccess">
     
 </a>
 
@@ -140,7 +140,7 @@ GoAccess can be compiled and used on *nix systems.
 
 Download, extract and compile GoAccess with:
 
-    $ wget https://www.swifttechco.com
+    $ wget https://github.com/Swift-Tech-Co/goaccess
     $ tar -xzvf goaccess-1.12.tar.gz
     $ cd goaccess-1.12/
     $ ./configure --enable-utf8 --enable-geoip=mmdb --with-zlib
@@ -149,7 +149,7 @@ Download, extract and compile GoAccess with:
 
 ### Build from GitHub (Development) ###
 
-    $ git clone https://www.swifttechco.com
+    $ git clone https://github.com/Swift-Tech-Co/goaccess
     $ cd goaccess
     $ autoreconf -fiv
     $ ./configure --enable-utf8 --enable-geoip=mmdb
@@ -172,8 +172,8 @@ alternative option below.
 
 #### Official GoAccess Debian & Ubuntu repository ####
 
-    $ wget -O - https://www.swifttechco.com | gpg --dearmor | sudo tee /usr/share/keyrings/goaccess.gpg >/dev/null
-    $ echo "deb [signed-by=/usr/share/keyrings/goaccess.gpg arch=$(dpkg --print-architecture)] https://www.swifttechco.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/goaccess.list
+    $ wget -O - https://github.com/Swift-Tech-Co/goaccess | gpg --dearmor | sudo tee /usr/share/keyrings/goaccess.gpg >/dev/null
+    $ echo "deb [signed-by=/usr/share/keyrings/goaccess.gpg arch=$(dpkg --print-architecture)] https://github.com/Swift-Tech-Co/goaccess $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/goaccess.list
     $ sudo apt-get update
     $ sudo apt-get install goaccess
 
@@ -222,7 +222,7 @@ alternative option below.
 #### Windows ####
 
 GoAccess can be used in Windows through Cygwin. See Cygwin's <a
-href="https://www.swifttechco.com">packages</a>.  Or through the
+href="https://github.com/Swift-Tech-Co/goaccess">packages</a>.  Or through the
 GNU+Linux Subsystem on Windows 10.
 
 #### Docker ####
@@ -242,7 +242,7 @@ There is also documentation how to use [docker-compose](./docker-compose/README.
 
 You can also build the binary for Debian based systems in an isolated container environment to prevent cluttering your local system with the development libraries:
 
-    $ curl -L "https://www.swifttechco.com" | tar -xz && cd goaccess-master
+    $ curl -L "https://github.com/Swift-Tech-Co/goaccess" | tar -xz && cd goaccess-master
     $ docker build -t goaccess/build.debian-12 -f Dockerfile.debian-12 .
     $ docker run -i --rm -v $PWD:/goaccess goaccess/build.debian-12 > goaccess
 
@@ -320,7 +320,6 @@ and applying a filter
 
     # tail -f -n +0 access.log | grep -i --line-buffered 'firefox' | goaccess -o report.html --real-time-html -
 
-
 ### Multiple Log files ###
 
 There are several ways to parse multiple logs with GoAccess. The simplest is to
@@ -349,11 +348,9 @@ Use `--jobs=<count>` (or `-j`) to enable multi-thread parsing. For example:
 
     # goaccess access.log -o report.html -j 4
 
-
 And use `--chunk-size=<256-32768>` to adjust chunk size, the default chunk size is 1024. For example:
 
     # goaccess access.log -o report.html -j 4 --chunk-size=8192
-
 
 ### Real-time HTML outputs ###
 
@@ -373,7 +370,7 @@ browser, not the sampling window itself.
 
     # goaccess access.log -o /usr/share/nginx/html/your_site/report.html --real-time-html
 
-To view the report you can navigate to `https://www.swifttechco.com
+To view the report you can navigate to `https://github.com/Swift-Tech-Co/goaccess
 
 By default, GoAccess will use the host name of the generated report.
 Optionally, you can specify the URL to which the client's browser will connect
@@ -495,7 +492,6 @@ priority, we can run it as:
 and if you don't want to install it on your server, you can still run it from
 your local machine!
 
-
 **Note:** SSH requires `-n` so GoAccess can read from stdin. Also, make sure to
 use SSH keys for authentication as it won't work if a passphrase is required.
 
@@ -507,7 +503,6 @@ We receive many questions and issues that have been answered previously.
 * Problems with pattern matching? Spaces are often a problem, see for instance #136, #1579
 * Other issues matching log entries: See >200 closed issues regarding log/date/time formats
 * Problems with log processing? See >111 issues regarding log processing
-
 
 #### Incremental log processing ####
 
@@ -580,13 +575,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/goaccess
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [allinurl/goaccess](https://github.com/allinurl/goaccess) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
