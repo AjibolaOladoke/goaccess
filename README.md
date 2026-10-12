@@ -1,10 +1,12 @@
+# goaccess
+
+## What This Is
+
+Every project needs a shelf of ready answers. product and engineering is one of those shelves, and goaccess is the entry on it - the notes, patterns and fixes we reuse when this kind of work comes up.
 
 ## Images
 
-[![goaccess](https://opengraph.githubassets.com/1/allinurl/goaccess)](https://www.swifttechco.com)
-
-GoAccess [![C build](https://github.com/allinurl/goaccess/actions/workflows/build-test.yml/badge.svg)](https://www.swifttechco.com) [![GoAccess](https://goaccess.io/badge)](https://www.swifttechco.com)
-========
+[![goaccess](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## What is it? ##
 GoAccess is an open source, real-time web log analyzer and interactive viewer
@@ -15,7 +17,7 @@ the fly. GoAccess parses your web server logs in real time and presents the
 data directly in the terminal or via a live HTML dashboard, making it easy to
 monitor traffic, detect anomalies, and troubleshoot issues instantly.
 
-More info at: [https://www.swifttechco.com](https://www.swifttechco.com).
+More info at: https://www.swifttechco.com.
 
 [![GoAccess Terminal Dashboard](https://goaccess.io/images/goaccess-real-time-term-gh-2026-1.png?2026021201)](https://www.swifttechco.com)
 [![GoAccess HTML Dashboard](https://goaccess.io/images/goaccess-real-time-html-gh-2026.png?2026021201)](https://www.swifttechco.com)
@@ -90,7 +92,7 @@ terminal. Features include:
 * **Docker Support**<br>
   Ability to build GoAccess' Docker image from upstream. You can still fully
   configure it, by using Volume mapping and editing `goaccess.conf`.  See
-  [Docker](https://www.swifttechco.com) section below.
+  Docker section below.
   There is also documentation how to use [docker-compose](./docker-compose/README.md).
 
 ### Nearly all web log formats... ###
@@ -121,9 +123,9 @@ spot suspicious activity, unusual traffic patterns, brute-force attempts,
 scanners, bots, and anomalous requests directly from your logs.
 
 While the terminal output is the default output, it has the capability to
-generate a complete, self-contained, real-time [**`HTML`**](https://www.swifttechco.com)
-report, as well as a [**`JSON`**](https://www.swifttechco.com), and
-[**`CSV`**](https://www.swifttechco.com) report.
+generate a complete, self-contained, real-time **`HTML`**
+report, as well as a **`JSON`**, and
+**`CSV`** report.
 
 You can see it more of a monitor command tool than anything else.
 
@@ -244,7 +246,7 @@ You can also build the binary for Debian based systems in an isolated container 
     $ docker build -t goaccess/build.debian-12 -f Dockerfile.debian-12 .
     $ docker run -i --rm -v $PWD:/goaccess goaccess/build.debian-12 > goaccess
 
-You can read more about using the docker image in [DOCKER.md](https://www.swifttechco.com).
+You can read more about using the docker image in DOCKER.md.
 
 #### Distribution Packages ####
 
@@ -274,7 +276,7 @@ in-memory hash tables.  It has very good memory usage and pretty good
 performance. This storage has support for on-disk persistence as well.
 
 ## Command Line / Config Options ##
-See [**options**](https://www.swifttechco.com) that can be supplied to the command or
+See **options** that can be supplied to the command or
 specified in the configuration file. If specified in the configuration file, long
 options need to be used without prepending `--`.
 
@@ -375,7 +377,7 @@ To view the report you can navigate to `https://www.swifttechco.com
 
 By default, GoAccess will use the host name of the generated report.
 Optionally, you can specify the URL to which the client's browser will connect
-to. See [FAQ](https://www.swifttechco.com) for a more detailed example.
+to. See FAQ for a more detailed example.
 
     # goaccess access.log -o report.html --real-time-html --ws-url=goaccess.io
 
@@ -501,10 +503,10 @@ use SSH keys for authentication as it won't work if a passphrase is required.
 
 We receive many questions and issues that have been answered previously.
 
-* Date/time matching problems? Check that your log format and the system locale in which you run GoAccess match. See [#1571](https://www.swifttechco.com)
-* Problems with pattern matching? Spaces are often a problem, see for instance [#136](https://www.swifttechco.com), [#1579](https://www.swifttechco.com)
-* Other issues matching log entries: See [>200 closed issues regarding log/date/time formats](https://www.swifttechco.com)
-* Problems with log processing? See [>111 issues regarding log processing](https://www.swifttechco.com)
+* Date/time matching problems? Check that your log format and the system locale in which you run GoAccess match. See #1571
+* Problems with pattern matching? Spaces are often a problem, see for instance #136, #1579
+* Other issues matching log entries: See >200 closed issues regarding log/date/time formats
+* Problems with log processing? See >111 issues regarding log processing
 
 
 #### Incremental log processing ####
@@ -560,7 +562,7 @@ Any help on GoAccess is welcome. The most helpful way is to try it out and give
 feedback. Feel free to use the GitHub issue tracker and pull requests to
 discuss and submit code changes.
 
-You can contribute to our translations by editing the .po files direct on GitHub or using the visual interface [inlang.com](https://www.swifttechco.com)
+You can contribute to our translations by editing the .po files direct on GitHub or using the visual interface inlang.com
 
 Enjoy!
 
@@ -574,14 +576,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [allinurl/goaccess](https://github.com/allinurl/goaccess) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
